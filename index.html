@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>testing</title>
+
+
+</head>
+
+<body ng-app="test" ng-controller="wrapperController">
+
+<div>testing time...</div>
+
+<div style="border: solid blueviolet;">
+    instructions :</br>
+    1. press on the "increase" button first.</br>
+    2. press on the apply button.</br>
+    3. the move to next button is just for fun :)</br>
+
+</div>
+
+<table style="width:100%;padding-bottom: 20px; border:solid blue">
+    <tbody><tr>
+        <th>Number</th>
+    </tr>
+    <tr>
+        <td>number string :{{number}} </br>
+            number object : {{numberObject.number}}</br>
+            number function : {{NumberFunction()}}
+        </td>
+
+
+
+    </tr>
+
+    </tbody></table>
+
+
+<div>
+    <ui-view></ui-view>
+</div>
+
+
+<!-- your app's js -->
+<script src="lib/angular/angular.min.js"></script>
+<script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="services/data_service.js"></script>
+<script src="app.js"></script>
+<script src="main_list/main_list.js"></script>
+<script src="item_info/item_info.js"></script>
+</body>
+</html>
