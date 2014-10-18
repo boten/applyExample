@@ -22,11 +22,16 @@ angular.module('test', ['test.services','ui.router'])
                 controllerAs : 'item'
 
             })
+            .state('model',{
+                url: '/model',
+                templateUrl: 'model/model.html'
+
+            })
     })
     .controller('wrapperController',['$scope','dataService',function(scope,dataService){
-        scope.number= dataService.number;
-        scope.numberObject= dataService.numberObject;
-        scope.NumberFunction = dataService.getNumberFunction;
+        this.number= dataService.number;
+        this.numberObject= dataService.numberObject;
+        this.NumberFunction = dataService.getNumberFunction;
 
     }])
     .run(function() {

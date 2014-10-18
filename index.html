@@ -7,7 +7,7 @@
 
 </head>
 
-<body ng-app="test" ng-controller="wrapperController">
+<body ng-app="test" ng-controller="wrapperController as wrap">
 
 <div>testing time...</div>
 
@@ -24,9 +24,9 @@
         <th>Number</th>
     </tr>
     <tr>
-        <td>number string :{{number}} </br>
-            number object : {{numberObject.number}}</br>
-            number function : {{NumberFunction()}}
+        <td>number string :{{wrap.number}} </br>
+            number object : {{wrap.numberObject.number}}</br>
+            number function : {{wrap.NumberFunction()}}
         </td>
 
 
@@ -48,5 +48,7 @@
 <script src="app.js"></script>
 <script src="main_list/main_list.js"></script>
 <script src="item_info/item_info.js"></script>
+<script src="model/model.js"></script>
+
 </body>
 </html>

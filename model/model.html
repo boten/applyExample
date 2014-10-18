@@ -1,0 +1,28 @@
+<div>
+    cool trick : type in first column all changes </br>
+    type in second only 2 -3 link now </br>
+    type in 3 only 3 link now </br>
+
+    this is beacuse when we put stuff on the scope proto inhirits accure</br>
+    and when we change the value on the 2 a new item is created on the 2 scope
+    that is no longer connected to the first</br>
+    in order to keep the link with all 3 we need to use ref like:</br>
+    instead of writing scope.number = 3 we should scope.number = {number : 3}</br>
+    or use controller as. and then write main.number = 3
+</div>
+
+
+<div ng-controller="model1">
+    <input ng-model="count" >
+    {{count}}</br> </input>
+    <div ng-controller="model2">
+        <input ng-model="count" >
+        {{count}}</br> </input>
+        <div ng-controller="model3">
+            <input ng-model="count" >
+            {{count}}</br> </input>
+        </div>
+    </div>
+
+</div>
+

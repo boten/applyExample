@@ -28,6 +28,7 @@
                 $timeout(function(){
                     alert(' befor you press ok look to the left at "number string" that is now updated to 4')
                     $scope.mainNumber = dataService.number;
+                    $scope.wrap.number = dataService.number;
                     $scope.$apply()},5000);
             }
 
